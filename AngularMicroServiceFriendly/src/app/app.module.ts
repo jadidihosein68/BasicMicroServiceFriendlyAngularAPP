@@ -4,8 +4,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { HeaderComponent } from './components/core/app-header/header.component';
-import { SideMenuComponent } from './components/core/app-side-menu/sidebar.menu.component';
+import { HeaderComponent } from './components/core/component/app-header/header.component';
+import { SideMenuComponent } from './components/core/component/app-side-menu/sidebar.menu.component';
 
 @NgModule({
   declarations: [
