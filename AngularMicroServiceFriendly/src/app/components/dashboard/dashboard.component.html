@@ -1,10 +1,11 @@
-<div >
+<div>
     <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
     <div class="row">
         <div class="col-md-12">
             <ngb-carousel>
                 <ng-template ngbSlide *ngFor="let slider of sliders">
-                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
+                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide"
+                        width="100%">
                     <div class="carousel-caption">
                         <h3>{{slider.label}}</h3>
                         <p>{{slider.text}}</p>
@@ -13,5 +14,27 @@
             </ngb-carousel>
         </div>
     </div>
-    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
+    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}
+    </ngb-alert>
+</div>
+
+
+<div class="row">
+    
+    <div class="col-md-4">
+
+        <div class="card">
+            <div class="card-body">Total No. of Records</div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+
+        <div class="card" style="height: 100%">
+            <div class="card-body">Basic card</div>
+        </div>
+    </div>
+
+   
+
 </div>
