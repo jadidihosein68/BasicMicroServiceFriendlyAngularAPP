@@ -9,6 +9,8 @@ import { SideMenuComponent } from './components/core/component/app-side-menu/sid
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './components/core/component/PageNotFoundComponent/page.not.found.component';
 import { SharedModule } from './components/shared/shared.module';
+import { SampleTabModule } from './components/Tab1/sampletab.component.module';
+import { SampleTabComponent } from './components/Tab1/sampletab.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,12 @@ import { SharedModule } from './components/shared/shared.module';
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: DashboardComponent, pathMatch: 'full' },
-    //  { path: 'tweets', component: TwitterComponent },
-    //  { path: 'managetimeseries', component: ManageTimeseriesComponent },
+      //{ path: 'tweets', component: SampleTabComponent },
+      { path: 'sampletab1', component: SampleTabComponent },
       { path: '**', component: PageNotFoundComponent },
     ]),
-    SharedModule
+    SharedModule,
+    SampleTabModule
   ],
   providers: [],
   bootstrap: [AppComponent]
