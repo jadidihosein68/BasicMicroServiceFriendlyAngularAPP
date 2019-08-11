@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/core/component/app-header/header.c
 import { SideMenuComponent } from './components/core/component/app-side-menu/sidebar.menu.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './components/core/component/PageNotFoundComponent/page.not.found.component';
+import { SharedModule } from './components/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PageNotFoundComponent } from './components/core/component/PageNotFoundC
     //  { path: 'tweets', component: TwitterComponent },
     //  { path: 'managetimeseries', component: ManageTimeseriesComponent },
       { path: '**', component: PageNotFoundComponent },
-    ])
+    ]),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

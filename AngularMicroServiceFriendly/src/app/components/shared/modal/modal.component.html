@@ -1,0 +1,26 @@
+<p>
+  <button class="btn btn-info " (click)="open(content)">{{btnlabel}}</button>
+</p>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">
+      <ng-content select=".header">
+      </ng-content>
+    </h4>
+    <a class="close" aria-label="Close" (click)="d('Cross click')">
+      <span>&times;</span>
+    </a>
+  </div>
+  <div class="modal-body">
+    <ng-content select=".body">
+    </ng-content>
+
+  </div>
+  <div class="modal-footer">
+    <div *ngIf="hasClose">
+      <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+    </div>
+    <ng-content select=".footer">
+    </ng-content>
+  </div>
+</ng-template>
