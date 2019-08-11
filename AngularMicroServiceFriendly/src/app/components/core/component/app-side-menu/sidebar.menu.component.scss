@@ -1,4 +1,5 @@
-$topnav-background-color: #1b1b28;
+$topnav-background-color: #506ee4;
+
 .sidebar {
     border-radius: 0;
     position: fixed;
@@ -27,7 +28,7 @@ $topnav-background-color: #1b1b28;
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
-            color: #999;
+            color: #d8e1fe;
             text-decoration: none;
             .fa {
                 margin-right: 10px;
@@ -162,12 +163,12 @@ $topnav-background-color: #1b1b28;
 
 .toggle-button {
     position: fixed;
-    width: 236px;
+    width: 235px;
     cursor: pointer;
     padding: 12px;
     bottom: 0;
-    color: #999;
-    background: #212529;
+    color: #d8e1fe;
+    background: #506ee4;
     i {
         font-size: 23px;
     }

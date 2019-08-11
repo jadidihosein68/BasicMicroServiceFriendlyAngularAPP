@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   })
   export class PageNotFoundComponent  {
 
-    NotFoundImage = `assets/images/morad.gif`;
+    NotFoundImage = `assets/images/error.png`;
     constructor() { }
 }
