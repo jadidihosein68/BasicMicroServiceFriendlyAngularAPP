@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -11,11 +10,13 @@ import { PageNotFoundComponent } from './components/core/component/PageNotFoundC
 import { SharedModule } from './components/shared/shared.module';
 import { SampleTabModule } from './components/Tab1/sampletab.component.module';
 import { SampleTabComponent } from './components/Tab1/sampletab.component';
+import { DashboardModule } from './components/dashboard/dashboard.component.module';
+import { CustomModalComponent } from './components/shared/modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     HeaderComponent,
     SideMenuComponent,
     PageNotFoundComponent
@@ -26,12 +27,11 @@ import { SampleTabComponent } from './components/Tab1/sampletab.component';
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: DashboardComponent, pathMatch: 'full' },
-      //{ path: 'tweets', component: SampleTabComponent },
       { path: 'sampletab1', component: SampleTabComponent },
       { path: '**', component: PageNotFoundComponent },
     ]),
-    SharedModule,
-    SampleTabModule
+    SampleTabModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

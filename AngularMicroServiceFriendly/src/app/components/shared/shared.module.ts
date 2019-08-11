@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomModalComponent } from './modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -10,6 +11,8 @@ import { CustomModalComponent } from './modal/modal.component';
     CustomModalComponent
   ],
   exports: [
+    CommonModule,
+    NgbModule,
     CustomModalComponent
    ]
 })
