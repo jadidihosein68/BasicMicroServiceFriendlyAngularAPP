@@ -25,11 +25,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    RouterModule.forRoot([
-      { path: '', component: DashboardComponent, pathMatch: 'full' },
-      { path: 'sampletab1', component: SampleTabComponent },
-      { path: '**', component: PageNotFoundComponent },
-    ]),
     SampleTabModule,
     DashboardModule
   ],
