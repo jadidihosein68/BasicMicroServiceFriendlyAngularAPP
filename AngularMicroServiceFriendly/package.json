@@ -21,7 +21,6 @@
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/router": "^7.2.15",
     "@ng-bootstrap/ng-bootstrap": "^4.0.1",
-    "angular5-csv": "^0.2.11",
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "core-js": "^2.6.9",
