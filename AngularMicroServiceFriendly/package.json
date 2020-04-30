@@ -25,7 +25,7 @@
     "bootstrap": "^4.2.1",
     "core-js": "^2.6.9",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
